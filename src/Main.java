@@ -11,8 +11,8 @@ public class Main {
     public static void main(String[] args) {
         int[] arr = generateRandomArray();
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
+        for (int j : arr) {
+            sum = sum + j;
         }
         System.out.println("Summa zatrat za mesyac ravna " + sum + " rubley");
 
@@ -38,6 +38,15 @@ public class Main {
 
         int srednyaya = sum / 30;
         System.out.println("Srednyaya summa zatrat za mesyac sostavila " + srednyaya + " rubley");
+
+
+
+
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+
+        for (int a = reverseFullName.length - 1; a >= 0; a--) {
+            System.out.print(reverseFullName[a]);
+        }
 
 
 
